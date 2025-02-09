@@ -2,7 +2,7 @@ import React, { useRef } from 'react';
 import emailjs from '@emailjs/browser';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
-
+import contact from "../assets/Images/contact.png"
 const Contact = () => {
   const form = useRef();
 
@@ -43,8 +43,8 @@ const Contact = () => {
           <h1 className='text-white text-3xl '>Contact</h1>
         </div>
         <div className='flex flex-row gap-11 '>
-          <div className='w-[250px] h-[500px] bg-cyan-100 rounded-xl'>
-   
+          <div className='w-[250px] h-[500px] bg-cyan-100 rounded-xl bg-contain'>
+            <img src={contact} alt="" className='rounded-lg h-[500px]'/>
           </div>
           <div className='flex flex-col gap-8 '>
             <p className='text-[#cee8ff] font-serif text-xl underline'>Get In Touch</p>

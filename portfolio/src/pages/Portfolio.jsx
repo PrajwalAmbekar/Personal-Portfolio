@@ -1,5 +1,16 @@
 import React from 'react'
 import { useState } from 'react'
+import { FaHtml5 } from "react-icons/fa";
+import { SiCss3 } from "react-icons/si";
+import { GrReactjs } from "react-icons/gr";
+import { TbBrandJavascript } from "react-icons/tb";
+import { SiTailwindcss } from "react-icons/si";
+import { FiFigma } from "react-icons/fi";
+import { IoLogoNodejs } from "react-icons/io5";
+import { SiExpress } from "react-icons/si";
+import { SiMongodb } from "react-icons/si";
+import { SiMysql } from "react-icons/si";
+import { FaJava } from "react-icons/fa";
 const Portfolio = () => {
   const sections = ["Skills", "Resume", "Tech Stack"];
   const [activeSection, setActiveSection] = useState("Skills")
@@ -77,47 +88,47 @@ const Portfolio = () => {
     <h2 className='text-[#ACC2EF] text-xl underline'>Tech Stack</h2>
     <div className='grid  grid-cols-4 gap-3 w-[400px] font-serif ml-36 '>
       <div className='flex flex-col text-[#ACC2EF]'>
-        <div className='w-14 h-14 rounded-lg bg-[#1F3A5F]'> </div>
+        <div className='w-14 h-14 rounded-lg bg-[#1F3A5F] flex justify-center items-center hover:scale-125 cursor-pointer hover:duration-300'> <FaHtml5 className='text-orange-600 text-4xl' /></div>
         <p className='text-[16px]'>HTML</p>
       </div>
       <div className='flex flex-col text-[#ACC2EF]'>
-        <div className='w-14 h-14 rounded-lg bg-[#1F3A5F]'> </div>
+        <div className='w-14 h-14 rounded-lg bg-[#1F3A5F] flex justify-center items-center text-sm hover:scale-125 cursor-pointer hover:duration-300' ><SiCss3  className='text-blue-500 text-4xl'/> </div>
         <p className='text-[16px]'>CSS</p>
       </div>
       <div className='flex flex-col text-[#ACC2EF]'>
-        <div className='w-14 h-14 rounded-lg bg-[#1F3A5F]'> </div>
+        <div className='w-14 h-14 rounded-lg bg-[#1F3A5F] flex justify-center items-center hover:scale-125 cursor-pointer hover:duration-300' > <TbBrandJavascript className='text-yellow-400 text-5xl' /></div>
         <p className='text-[16px]'>JS</p>
       </div>
       <div className='flex flex-col text-[#ACC2EF]'>
-        <div className='w-14 h-14 rounded-lg bg-[#1F3A5F]'> </div>
+        <div className='w-14 h-14 rounded-lg bg-[#1F3A5F] flex justify-center items-center hover:scale-125 cursor-pointer hover:duration-300' ><GrReactjs className='text-cyan-500 text-4xl'/> </div>
         <p className='text-[16px]'>React Js</p>
       </div>
       <div className='flex flex-col text-[#ACC2EF]'>
-        <div className='w-14 h-14 rounded-lg bg-[#1F3A5F]'> </div>
+        <div className='w-14 h-14 rounded-lg bg-[#1F3A5F] flex justify-center items-center hover:scale-125 cursor-pointer hover:duration-300' ><SiTailwindcss className='text-teal-600 text-4xl' /> </div>
         <p className='text-[16px]'>Tailwind CSS</p>
       </div>
       <div className='flex flex-col text-[#ACC2EF]'>
-        <div className='w-14 h-14 rounded-lg bg-[#1F3A5F]'> </div>
+        <div className='w-14 h-14 rounded-lg bg-[#1F3A5F] flex justify-center items-center hover:scale-125 cursor-pointer hover:duration-300' > <FiFigma className='text-rose-600 text-4xl'/></div>
         <p className='text-[16px]'>Figma</p>
       </div>
       <div className='flex flex-col text-[#ACC2EF]'>
-        <div className='w-14 h-14 rounded-lg bg-[#1F3A5F]'> </div>
+        <div className='w-14 h-14 rounded-lg bg-[#1F3A5F] flex justify-center items-center hover:scale-125 cursor-pointer hover:duration-300' ><IoLogoNodejs className='text-green-500 text-4xl' /></div>
         <p className='text-[16px]'>Node Js</p>
       </div>
       <div className='flex flex-col text-[#ACC2EF]'>
-        <div className='w-14 h-14 rounded-lg bg-[#1F3A5F]'> </div>
+        <div className='w-14 h-14 rounded-lg bg-[#1F3A5F] flex justify-center items-center hover:scale-125 cursor-pointer hover:duration-300' ><SiExpress  className='text-green-200 text-4xl'/> </div>
         <p className='text-[16px]'>Express Js</p>
       </div>
       <div className='flex flex-col text-[#ACC2EF]'>
-        <div className='w-14 h-14 rounded-lg bg-[#1F3A5F]'> </div>
+        <div className='w-14 h-14 rounded-lg bg-[#1F3A5F] flex justify-center items-center hover:scale-125 cursor-pointer hover:duration-300' > <SiMongodb className='text-green-800 text-4xl'/></div>
         <p className='text-[16px]'>Mondo DB</p>
       </div>
       <div className='flex flex-col text-[#ACC2EF]'>
-        <div className='w-14 h-14 rounded-lg bg-[#1F3A5F]'> </div>
+        <div className='w-14 h-14 rounded-lg bg-[#1F3A5F] flex justify-center items-center hover:scale-125 cursor-pointer hover:duration-300' > <SiMysql className='text-yellow-300 text-5xl' /></div>
         <p className='text-[16px]'>MY SQL</p>
       </div>
       <div className='flex flex-col text-[#ACC2EF]'>
-        <div className='w-14 h-14 rounded-lg bg-[#1F3A5F]'> </div>
+        <div className='w-14 h-14 rounded-lg bg-[#1F3A5F] flex justify-center items-center hover:scale-125 cursor-pointer hover:duration-300' ><FaJava className='text-orange-600 text-4xl font-bold'/> </div>
         <p className='text-[16px]'>Java</p>
       </div>
 
