@@ -1,11 +1,21 @@
 /** @type {import('tailwindcss').Config} */
 export default {
   content: [
-    "./index.html",
+  "./index.html",
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      fontFamily:{
+        Agbalumo:["Agbalumo","serif"]
+      }
+    },
+    
+  },
+  variants: {
+    extend: {
+      placeholderColor: ['hover'], 
+    },
   },
   plugins: [],
 }
