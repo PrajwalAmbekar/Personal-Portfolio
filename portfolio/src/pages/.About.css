@@ -28,4 +28,19 @@
     width: 100%;
     animation: underline-animation 0.3s forwards;
   }
-  
+/* Apply clip-path only for laptop screens (min-width: 1024px) */
+@media (min-width: 1024px) {
+  .clip-path-laptop {
+    clip-path: path('M 15,0 L 240,0 A 15,15 0,0,1 255,15 L 255,80 A 20,20 0,0,0 275,100 L 1000,100 A 15,15 0,0,1 1015,115 L 1015,635 A 15,15 0,0,1  1000,650 L 15,650 L 0,640 L 0,10 L 15,0 Z');
+  }
+}
+/* Ensure text wraps properly on tablets and mobile */
+/* Ensure text wraps properly on tablets and mobile */
+@media (max-width: 1024px) {
+  .font-serif {
+    white-space: normal !important;
+    word-wrap: break-word !important;
+    overflow-wrap: break-word !important;
+  }
+
+}
