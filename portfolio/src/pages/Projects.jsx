@@ -68,14 +68,16 @@ const Projects = () => {
     <div className='fixed h-[650px] w-3/4 bg-[#1F2B3E] rounded-3xl   flex flex-col gap-16' style={{
       clipPath: "path('M 15,0 L 240,0 A 15,15 0,0,1 255,15 L 255,80 A 20,20 0,0,0 275,100 L 1000,100 A 15,15 0,0,1 1015,115 L 1015,635 A 15,15 0,0,1  1000,650 L 15,650 L 0,640 L 0,10 L 15,0 Z  ')"
     }}>
-      <p className='text-white text-3xl hover:underline cursor-pointer m-10'>Projects</p>
+      <p className='text-white text-3xl hover:underline cursor-pointer m-9 hover:text-yellow-100'>
+      <span className='underline-animation'>Projects</span>
+      </p>
       <div className="flex flex-row gap-3">
         <nav className="bg-[#374357] h-[470px] rounded-bl-3xl rounded-tr-3xl flex flex-col justify-evenly p-20">
           {categories.map((category) => (
             <button
               key={category}
               onClick={() => setActiveCategory(category)}
-              className={`px-4 py-2  rounded-lg transition-colors ${activeCategory === categories ? "bg-[#0F1C2E] text-white" : "bg-blue-200 hover:bg-blue-300"
+              className={`px-4 py-2  rounded-lg transition-colors ${activeCategory === category ?  "bg-[#0F1C2E] text-white hover-neon" : "bg-blue-200 hover:scale-110 transition-transform duration-300"
                 }`}
             >
               {category}

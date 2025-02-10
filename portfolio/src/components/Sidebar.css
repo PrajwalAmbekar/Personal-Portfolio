@@ -1,0 +1,21 @@
+/* sidebar.css */
+
+/* Custom neon border effect */
+.neon-border {
+    border: 2px solid #cd0131;
+    box-shadow: 0 0 5px #cd0131, 0 0 15px #cd0131, 0 0 30px #cd0131;
+  }
+  
+  /* Hover neon effect for icons */
+  .hover-neon:hover {
+    transform: scale(1.2);
+    transition: transform 0.3s ease-in-out;
+    box-shadow: 0 0 5px #cd0131, 0 0 15px #cd0131, 0 0 30px #cd0131;
+  }
+  .hover-neon1:hover {
+    transform: scale(1);
+    transition: transform 0.3s ease-in-out;
+    box-shadow: 0 0 5px #cd0131, 0 0 15px #cd0131, 0 0 30px #cd0131;
+
+  }
+  

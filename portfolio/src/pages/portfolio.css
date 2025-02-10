@@ -1,0 +1,43 @@
+/* Neon Border Animation */
+@keyframes neonBorder {
+    0% {
+      border-color: #00ff00;
+      box-shadow: 0 0 10px #00ff00, 0 0 20px #00ff00, 0 0 30px #00ff00, 0 0 40px #00ff00, 0 0 50px #00ff00, 0 0 60px #00ff00, 0 0 70px #00ff00;
+    }
+    25% {
+      border-color: #ff00ff;
+      box-shadow: 0 0 10px #ff00ff, 0 0 20px #ff00ff, 0 0 30px #ff00ff, 0 0 40px #ff00ff, 0 0 50px #ff00ff, 0 0 60px #ff00ff, 0 0 70px #ff00ff;
+    }
+    50% {
+      border-color: #00ffff;
+      box-shadow: 0 0 10px #00ffff, 0 0 20px #00ffff, 0 0 30px #00ffff, 0 0 40px #00ffff, 0 0 50px #00ffff, 0 0 60px #00ffff, 0 0 70px #00ffff;
+    }
+    75% {
+      border-color: #ff0000;
+      box-shadow: 0 0 10px #ff0000, 0 0 20px #ff0000, 0 0 30px #ff0000, 0 0 40px #ff0000, 0 0 50px #ff0000, 0 0 60px #ff0000, 0 0 70px #ff0000;
+    }
+    100% {
+      border-color: #00ff00;
+      box-shadow: 0 0 10px #00ff00, 0 0 20px #00ff00, 0 0 30px #00ff00, 0 0 40px #00ff00, 0 0 50px #00ff00, 0 0 60px #00ff00, 0 0 70px #00ff00;
+    }
+  }
+  
+  .container-neon-border {
+    border: 2px solid;
+    animation: neonBorder 5s infinite linear;
+    padding: 20px;
+    border-radius: 10px;
+  }
+/* Hover Effect on Skills Bars */
+.skills-bar:hover::after {
+    content: attr(data-skill);
+    position: absolute;
+    left: 100%;
+    margin-left: 10px;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 14px;
+  }
+    

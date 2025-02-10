@@ -1,4 +1,5 @@
-import React from 'react'
+import React from 'react';
+import './portfolio.css';
 import { useState } from 'react'
 import { FaHtml5 } from "react-icons/fa";
 import { SiCss3 } from "react-icons/si";
@@ -23,7 +24,7 @@ const Portfolio = () => {
       <div class="flex space-y-4 flex-col ">
         <div class="flex flex-row items-center gap-3">
 
-          <div class="bg-[#F7EB00] w-48 rounded-tr-md rounded-br-md h-8"></div>
+          <div class="skills-bar bg-[#F7EB00] w-48 rounded-tr-md rounded-br-md h-8" data-skill="Node Js"></div>
           <div class="text-white mt-2">Node Js</div>
         </div>
         <div class="flex flex-row items-center gap-4">
@@ -70,13 +71,15 @@ const Portfolio = () => {
 
     </div>
   </>);
-  const resumeContent =(
+  const resumeContent = (
     <div className="flex flex-col gap-8">
-      <h2 className="text-xl text-[#ACC2EF]  underline ">Resume</h2>
+      <h2 className="text-xl text-[#ACC2EF]  hover:text-yellow-100 ">
+      <span className='underline-animation'>Resume</span>
+      </h2>
       <div className="bg-[#0f1c2e] p-4 rounded-lg shadow-md w-[560px] ml-14">
-       
+
         <div className="bg-blue-200 hover:bg-blue-100 p-4 rounded-lg cursor-pointer transition-colors h-[150px] ">
-          
+
         </div>
         <button className="bg-blue-500 text-white px-4 py-2 rounded-lg mt-6 hover:bg-blue-600 transition-colors ml-44 ">
           Download Resume
@@ -85,14 +88,16 @@ const Portfolio = () => {
     </div>
   );
   const techStackContent = (<div className='flex flex-col gap-8'>
-    <h2 className='text-[#ACC2EF] text-xl underline'>Tech Stack</h2>
+    <h2 className='text-[#ACC2EF] text-xl hover:text-yellow-100 '>
+    <span className='underline-animation'>Tech Stack</span>
+    </h2>
     <div className='grid  grid-cols-4 gap-3 w-[400px] font-serif ml-36 '>
       <div className='flex flex-col text-[#ACC2EF]'>
         <div className='w-14 h-14 rounded-lg bg-[#1F3A5F] flex justify-center items-center hover:scale-125 cursor-pointer hover:duration-300'> <FaHtml5 className='text-orange-600 text-4xl' /></div>
         <p className='text-[16px]'>HTML</p>
       </div>
       <div className='flex flex-col text-[#ACC2EF]'>
-        <div className='w-14 h-14 rounded-lg bg-[#1F3A5F] flex justify-center items-center text-sm hover:scale-125 cursor-pointer hover:duration-300' ><SiCss3  className='text-blue-500 text-4xl'/> </div>
+        <div className='w-14 h-14 rounded-lg bg-[#1F3A5F] flex justify-center items-center text-sm hover:scale-125 cursor-pointer hover:duration-300' ><SiCss3 className='text-blue-500 text-4xl' /> </div>
         <p className='text-[16px]'>CSS</p>
       </div>
       <div className='flex flex-col text-[#ACC2EF]'>
@@ -100,7 +105,7 @@ const Portfolio = () => {
         <p className='text-[16px]'>JS</p>
       </div>
       <div className='flex flex-col text-[#ACC2EF]'>
-        <div className='w-14 h-14 rounded-lg bg-[#1F3A5F] flex justify-center items-center hover:scale-125 cursor-pointer hover:duration-300' ><GrReactjs className='text-cyan-500 text-4xl'/> </div>
+        <div className='w-14 h-14 rounded-lg bg-[#1F3A5F] flex justify-center items-center hover:scale-125 cursor-pointer hover:duration-300' ><GrReactjs className='text-cyan-500 text-4xl' /> </div>
         <p className='text-[16px]'>React Js</p>
       </div>
       <div className='flex flex-col text-[#ACC2EF]'>
@@ -108,7 +113,7 @@ const Portfolio = () => {
         <p className='text-[16px]'>Tailwind CSS</p>
       </div>
       <div className='flex flex-col text-[#ACC2EF]'>
-        <div className='w-14 h-14 rounded-lg bg-[#1F3A5F] flex justify-center items-center hover:scale-125 cursor-pointer hover:duration-300' > <FiFigma className='text-rose-600 text-4xl'/></div>
+        <div className='w-14 h-14 rounded-lg bg-[#1F3A5F] flex justify-center items-center hover:scale-125 cursor-pointer hover:duration-300' > <FiFigma className='text-rose-600 text-4xl' /></div>
         <p className='text-[16px]'>Figma</p>
       </div>
       <div className='flex flex-col text-[#ACC2EF]'>
@@ -116,11 +121,11 @@ const Portfolio = () => {
         <p className='text-[16px]'>Node Js</p>
       </div>
       <div className='flex flex-col text-[#ACC2EF]'>
-        <div className='w-14 h-14 rounded-lg bg-[#1F3A5F] flex justify-center items-center hover:scale-125 cursor-pointer hover:duration-300' ><SiExpress  className='text-green-200 text-4xl'/> </div>
+        <div className='w-14 h-14 rounded-lg bg-[#1F3A5F] flex justify-center items-center hover:scale-125 cursor-pointer hover:duration-300' ><SiExpress className='text-green-200 text-4xl' /> </div>
         <p className='text-[16px]'>Express Js</p>
       </div>
       <div className='flex flex-col text-[#ACC2EF]'>
-        <div className='w-14 h-14 rounded-lg bg-[#1F3A5F] flex justify-center items-center hover:scale-125 cursor-pointer hover:duration-300' > <SiMongodb className='text-green-800 text-4xl'/></div>
+        <div className='w-14 h-14 rounded-lg bg-[#1F3A5F] flex justify-center items-center hover:scale-125 cursor-pointer hover:duration-300' > <SiMongodb className='text-green-800 text-4xl' /></div>
         <p className='text-[16px]'>Mondo DB</p>
       </div>
       <div className='flex flex-col text-[#ACC2EF]'>
@@ -128,7 +133,7 @@ const Portfolio = () => {
         <p className='text-[16px]'>MY SQL</p>
       </div>
       <div className='flex flex-col text-[#ACC2EF]'>
-        <div className='w-14 h-14 rounded-lg bg-[#1F3A5F] flex justify-center items-center hover:scale-125 cursor-pointer hover:duration-300' ><FaJava className='text-orange-600 text-4xl font-bold'/> </div>
+        <div className='w-14 h-14 rounded-lg bg-[#1F3A5F] flex justify-center items-center hover:scale-125 cursor-pointer hover:duration-300' ><FaJava className='text-orange-600 text-4xl font-bold' /> </div>
         <p className='text-[16px]'>Java</p>
       </div>
 
@@ -148,14 +153,16 @@ const Portfolio = () => {
     <div className='fixed h-[650px] w-3/4 bg-[#1F2B3E] rounded-3xl   flex flex-col gap-16' style={{
       clipPath: "path('M 15,0 L 240,0 A 15,15 0,0,1 255,15 L 255,80 A 20,20 0,0,0 275,100 L 1000,100 A 15,15 0,0,1 1015,115 L 1015,635 A 15,15 0,0,1  1000,650 L 15,650 L 0,640 L 0,10 L 15,0 Z ')"
     }}>
-      <p className='text-white text-3xl hover:underline cursor-pointer m-10'>Portfolio</p>
+      <p className='text-white text-3xl  cursor-pointer m-9 hover:text-yellow-100 '>
+        <span className='underline-animation'>Portfolio</span>
+      </p>
       <div className="flex flex-row gap-6">
-        <nav className="bg-[#374357] h-[470px] rounded-bl-3xl rounded-tr-3xl flex flex-col justify-evenly p-20 ">
+        <nav className="bg-[#374357] h-[470px] rounded-bl-3xl rounded-tr-3xl flex flex-col justify-evenly p-20  ">
           {sections.map((section) => (
             <button
               key={section}
               onClick={() => setActiveSection(section)}
-              className={` px-4 py-2  rounded-lg transition-colors ${activeSection === section ? "bg-[#0F1C2E] text-white" : "bg-blue-200 hover:bg-blue-300"
+              className={` px-4 py-2  rounded-lg transition-colors ${activeSection === section ? "bg-[#0F1C2E] text-white hover-neon" : "bg-blue-200 hover:scale-110 transition-transform duration-300"
                 }`}
             >
               {section}
