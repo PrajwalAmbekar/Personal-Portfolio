@@ -23,6 +23,20 @@ const Projects = () => {
       link: "https://example.com/web-project1" 
     },
     {
+      name: "Logo Project 1",
+      category: "Logo",
+      image: "logo-project1.jpg",
+      techStack: ["Illustrator", "Photoshop"],
+      link: "https://example.com/web-project1" 
+    },
+    {
+      name: "Figma Project 1",
+      category: "Figma",
+      image: "figma-project1.jpg",
+      techStack: ["Figma", "Sketch"],
+      link: "https://example.com/web-project1" 
+    },
+    {
       name: "Figma Project 1",
       category: "Figma",
       image: "figma-project1.jpg",
@@ -43,7 +57,7 @@ const Projects = () => {
 
   return (
     <div
-      className='lg:fixed h-full lg:h-full w-full bg-[#1F2B3E] rounded-3xl flex flex-col lg:gap-3 laptop-clip-path sm:w-[380px] lg:w-[100vw]'
+      className='lg:fixed lg:top-11 h-full lg:h-full w-full bg-[#1F2B3E] rounded-3xl flex flex-col lg:gap-3 laptop-clip-path sm:w-[380px] lg:w-[100vw] mobile-padding-top '
       style={{
         clipPath: "path('M 15,0 L 240,0 A 15,15 0,0,1 255,15 L 255,80 A 20,20 0,0,0 275,100 L 1000,100 A 15,15 0,0,1 1015,115 L 1015,635 A 15,15 0,0,1  1000,650 L 15,650 L 0,640 L 0,10 L 15,0 Z  ')",
         minHeight: "100vh", // Ensure the container covers the full height on mobile
@@ -64,8 +78,8 @@ const Projects = () => {
               onClick={() => setActiveCategory(category)}
               className={`px-4 py-2 rounded-lg transition-colors ${
                 activeCategory === category
-                  ? 'bg-[#0F1C2E] text-white hover-neon'
-                  : 'bg-blue-200 hover:scale-110 transition-transform duration-300'
+                  ? 'bg-[#0F1C2E] text-white hover-neon neon-border'
+                  : 'bg-blue-200 hover:scale-110 transition-transform duration-300 hover-neon'
               }`}
             >
               {category}
@@ -92,12 +106,12 @@ const Projects = () => {
       </div>
       
       {/* Navigation for mobile and tablet screens */}
-      <nav className='bg-[#374357] rounded-bl-3xl rounded-tr-3xl flex flex-row justify-evenly p-4 mobile-nav lg:hidden'>
+      <nav className='bg-[#374357] rounded-bl-3xl rounded-tr-3xl flex flex-row justify-evenly p-4 mobile-nav lg:hidden mobile-padding'>
         {categories.map((category) => (
           <button
             key={category}
             onClick={() => setActiveCategory(category)}
-            className={`px-4 py-2 rounded-lg transition-colors flex items-center ${
+            className={`lg:px-4 lg:py-2 rounded-lg transition-colors flex items-center lg:text-xl sm:text-sm sm:px-2 sm:py-1 mobile-padding-box  ${
               activeCategory === category
                 ? 'bg-[#0F1C2E] text-white hover-neon'
                 : 'bg-blue-200 hover:scale-110 transition-transform duration-300'
