@@ -1,0 +1,26 @@
+@media (max-width: 1024px) {
+    .laptop-clip-path {
+      clip-path: none !important;
+    }
+  }
+  @media (max-width: 640px) {
+    .form-input {
+      width: 100%;
+      padding: 0.5rem;
+    }
+    .submit-button {
+      margin-top: 1rem;
+      width: 100%;
+    }
+  }
+  @media only screen and (max-width: 768px) {
+    .mobile-padding-top {
+      padding-top: 24px; /* Adjust the value as needed */
+    }
+  }
+  @media only screen and (max-width: 768px) {
+    .mobile-margin-adjustment {
+      margin-top: 18px; /* Adjust the value as needed to decrease the gap */
+    }
+  }
+  

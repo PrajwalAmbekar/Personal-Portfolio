@@ -3,16 +3,19 @@ import './portfolio.css';
 import { useState } from 'react';
 import { FaHtml5, FaJava } from "react-icons/fa";
 import { SiCss3, SiTailwindcss, SiExpress, SiMongodb, SiMysql } from "react-icons/si";
+import { FaRegChartBar } from "react-icons/fa6";
 import { GrReactjs } from "react-icons/gr";
 import { TbBrandJavascript } from "react-icons/tb";
 import { FiFigma } from "react-icons/fi";
 import { IoLogoNodejs } from "react-icons/io5";
+import { FaRegAddressCard } from "react-icons/fa";
+import { PiStackPlusFill } from "react-icons/pi";
 
 const Portfolio = () => {
   const sections = [
-    { name: "Skills", icon: <TbBrandJavascript className="text-2xl" /> },
-    { name: "Resume", icon: <FiFigma className="text-2xl" /> },
-    { name: "Tech Stack", icon: <GrReactjs className="text-2xl" /> },
+    { name: "Skills", icon:  <FaRegChartBar className="text-2xl"  />},
+    { name: "Resume", icon:   <FaRegAddressCard className="text-2xl" />},
+    { name: "Tech Stack", icon:   <PiStackPlusFill className="text-2xl"/> },
   ];
   const [activeSection, setActiveSection] = useState("Skills");
 
@@ -118,7 +121,7 @@ const Portfolio = () => {
             <button
               key={section.name}
               onClick={() => setActiveSection(section.name)}
-              className={`px-4 py-2 rounded-lg transition-colors ${activeSection === section.name ? "bg-[#0F1C2E] text-white hover-neon" : "bg-blue-200 hover:scale-110 transition-transform duration-300"
+              className={`px-4 py-2 rounded-lg transition-colors ${activeSection === section.name ? "bg-[#0F1C2E] text-white hover-neon neon-border" : "bg-blue-200 hover:scale-110 transition-transform duration-300 hover-neon"
                 }`}
             >
               <span className="lg:hidden">{section.icon}</span>
