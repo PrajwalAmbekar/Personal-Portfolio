@@ -1,0 +1,51 @@
+
+/* Remove clipPath for mobile and tablet screens */
+@media (max-width: 1024px) {
+    .laptop-clip-path {
+      clip-path: none !important;
+    }
+  }
+  
+  /* Hide laptop navigation and show mobile navigation */
+  @media (max-width: 1024px) {
+    .laptop-nav {
+      display: none;
+    }
+    .mobile-nav {
+      display: flex;
+    }
+  }
+  
+  /* Adjust grid layout for mobile and tablet screens */
+  @media (max-width: 1024px) {
+    .laptop-grid {
+      display: none;
+    }
+    .mobile-grid {
+      display: grid;
+    }
+  }
+  
+  /* Adjust layout for smaller screens */
+  @media (max-width: 768px) {
+    .mobile-grid {
+      grid-template-columns: 1fr;
+    }
+    .mobile-nav {
+      flex-direction: row;
+      padding: 0rem;
+    }
+    .mobile-nav button {
+      margin: 0.5rem;
+    }
+  }
+  
+  /* Adjust projects container for visibility */
+  .mobile-grid {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+    padding: 1rem;
+    overflow-y: auto; /* Ensure scrolling */
+    height: calc(100vh - 80px); /* Adjust height considering navbar */
+  }
+  
